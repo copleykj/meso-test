@@ -1,0 +1,27 @@
+<head>
+  <title>meso-test</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+	<form name="signupForm" id="signup-form" class="panel" action="#">
+	  <div class="form-group">
+	    <label for="email">Email</label>
+	    <input type="text" name="email" id="email" class="form-control" />
+	    <span id='email-error'></span>
+	  </div>
+
+	  <div class="form-group">
+	    <label for="password">Password</label>
+	    <input type="password" name="password" id="password" class="form-control" />
+	  </div>
+
+	  <div class="form-group">
+	    <input type="submit" value="Sign Up" id="create-account" class="btn btn-success pull-right">
+	    <span id='password-error'></span>
+	  </div>
+	</form>
+</template>
